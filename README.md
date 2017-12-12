@@ -1,2 +1,2 @@
 # AutoTrader
-A study about trading operations using automatic graphical analysis
+A study about automatic trading operations using sistematic graphical analysis
