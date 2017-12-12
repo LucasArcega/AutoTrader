@@ -1,0 +1,164 @@
+@import '../../../core/styl/utils.styl'
+
+[data-component='main-menu']
+	position fixed
+	left 0
+	height 100%
+	padding-left 0
+	+breakpoint( tablet )
+		right -100%
+		left auto
+		z-index 9
+		padding-right 0
+	.sidebar
+		width 100%
+		background-color $bg-grey
+		border-right 2px solid $contrast-grey
+		height 100%
+		+breakpoint( tablet )
+			border-right 0
+			box-shadow $bs-menu
+		.list-menu
+			margin 0
+			padding 0
+			list-style none
+			> .item-menu
+				> .item
+					display block
+					width 100%
+					border 0
+					border-bottom 1px solid $contrast-grey
+					background-color transparent
+					padding 15px
+					text-decoration none
+					position relative
+					text-align left
+					&.active
+						background-color $secondary
+						.item-page
+							color white
+						.item-icon
+							color white
+					&:hover
+						.item-page
+							color white
+						.item-icon
+							color white
+					.animationLayer
+						position absolute
+						background-color $secondary
+						height 100%
+						width 0
+						top 0
+						left 0
+						z-index 1
+					.item-page
+						vertical-align bottom
+						font-family $primary-font
+						font-size 12px
+						font-weight 500
+						color $middle-grey
+						display inline-block
+						width 70%
+						padding-left 20px
+						transition .3s ease-in-out
+						text-align left
+						z-index 2
+						position relative
+					.item-icon
+						vertical-align middle
+						font-size 17px
+						color $secondary
+						transition .3s ease-in-out
+						z-index 2
+						position relative
+					.item-arrow
+						color $orange
+						position absolute
+						top 50%
+						right 10px
+						transform translateY( -50% )
+						z-index 2
+		.list-submenu
+			margin 0
+			padding 0
+			list-style none
+			overflow hidden
+			height 0
+			> .item-submenu
+				> .item
+					display block
+					width 100%
+					border 0
+					border-bottom 1px solid $contrast-grey
+					background-color transparent
+					padding 15px
+					text-decoration none
+					position relative
+					text-align left
+					&:hover
+						.item-page
+							color $primary
+					.animationLayer
+						position absolute
+						background-color white
+						height 0
+						width 0
+						top 50%
+						left 50%
+						transform translate( -50%, -50% )
+						z-index 1
+					.item-page
+						vertical-align bottom
+						font-family $primary-font
+						font-size 12px
+						font-weight 500
+						color $middle-grey
+						display inline-block
+						padding-left 40px
+						transition .3s ease-in-out
+						text-align left
+						z-index 2
+						position relative
+		.actions-mobile
+			font-size 0
+			border-bottom 1px solid $contrast-grey
+			display none
+			+breakpoint( tablet )
+				display block
+			[data-component='profile']
+				width 100%
+				.btn-dropdown
+					width 100%
+					text-align left
+					i
+						position absolute
+						right 10px
+			.btn-logout
+				background transparent
+				border 0
+				width 50%
+				height 50px
+				border-left 1px solid $contrast-grey
+				> span
+					vertical-align middle
+					font-family $primary-font
+					font-size 12px
+					font-weight 500
+					text-align center
+					color $secondary
+					margin-right 5px
+				> i
+					vertical-align middle
+					font-size 14px
+					color $secondary
+			[data-component='notifications']
+				width 50%
+				display inline-block
+				text-align center
+				.notification
+					vertical-align middle
+					&:after
+						border solid 2px $bg-grey
+
+

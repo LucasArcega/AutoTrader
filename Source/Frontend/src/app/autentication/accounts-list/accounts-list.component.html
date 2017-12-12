@@ -1,0 +1,19 @@
+<div data-component="accounts-list" *ngIf="active">
+	<p>Selecione uma conta:</p>
+	<mat-selection-list malihu-scrollbar [scrollbarOptions]="scrollbarOptions">
+		<mat-list-item (click)="selectAccount(account.user.accountNumber)" (keydown)="checkKey(account.user.accountNumber, $event)" tabindex="0" *ngFor="let account of accountsList">
+			<div class="account-item">
+				<span class="name">{{account.user.name}}</span>
+				<span>CPF	{{account.user.cpfCnpj}}</span>
+				<mat-radio-button disableRipple [checked]="selectedAccount == account.user.accountNumber"></mat-radio-button>
+			</div>
+		</mat-list-item>
+	</mat-selection-list>
+	<button type="button" mat-raised-button color="primary" class="btn-send" [disabled]="!selectedAccount" (click)="send()">
+		<span class="label">Entrar</span>
+		<mat-progress-spinner diameter="20" mode="indeterminate" *ngIf="sending"></mat-progress-spinner>
+	</button>
+	<button type="button" mat-raised-button color="primary" class="btn-send border" (click)="backToLogin()">
+		<span class="label">Sair</span>
+	</button>
+</div>

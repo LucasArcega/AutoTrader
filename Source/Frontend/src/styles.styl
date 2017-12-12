@@ -1,0 +1,116 @@
+@import 'core/material-omni.css'
+@import 'core/styl/utils'
+@import 'core/styl/boilerplate'
+@import 'core/styl/bootstrap'
+@import 'core/styl/fonts'
+@import '../node_modules/slick-carousel/slick/slick.scss'
+@import 'core/styl/form'
+
+*
+	outline none
+
+body
+	overflow-x hidden
+	font-family $secondary-font
+	-webkit-font-smoothing antialiased
+	background-color $bg-grey
+
+.container-fluid
+	padding-top 50px
+
+.main-content
+	padding-left 10px
+	padding-right 25px
+
+.btn
+	border 0
+	background $primary
+	color white
+	border-radius 20px
+	padding 10px 30px
+	font 12px/12px $primary-font
+	min-height 35px
+	text-decoration none
+	transition all .2s ease-out
+
+	&:hover
+		color white
+		text-decoration none
+
+	&.border
+		background transparent
+		&:hover
+			color $secondary
+			background white
+
+	&.white
+		border 1px solid white
+
+.btn-send
+	width 100%
+	overflow hidden
+	margin 0 0 24px
+
+	.mat-progress-spinner
+		position absolute
+		left 10px
+		top 8px
+
+	.label
+		position relative
+		z-index 2
+
+	.layer
+		display none
+		position absolute
+		width 50%
+		height 100%
+		left -100%
+		top 0
+		background $light-grey
+		z-index 1
+
+	&.timer
+		color white
+		.layer
+			display block
+
+
+.logo
+	background url( 'assets/imgs/shared/logo.svg' ) no-repeat
+	width 138px
+	height 76px
+	font-size 0
+
+.inp-cpf
+	margin 0 0 5px
+
+
+a
+	font 10px $secondary-font
+	color $grey
+	text-decoration underline
+
+	&:hover
+		color $light-grey
+
+.error
+	color $error
+	font 10px $secondary-font
+	margin 8px 0
+	text-align left
+
+h2
+	font 26px $primary-font
+	color $secondary
+	margin 0
+
+p
+	font 12px $secondary-font
+	color $middle-grey
+
+.snack-bar
+	background rgba( 246, 66, 66, .80 )
+
+	[data-component='snack-message']
+		display block

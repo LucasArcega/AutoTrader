@@ -1,0 +1,86 @@
+@import '../../core/styl/utils.styl'
+
+[data-component='autentication']
+	position absolute
+	width 100%
+	height @width
+	background url( '../../assets/imgs/login/bg.jpg' ) bottom center no-repeat
+	background-blend-mode multiply
+	background-size cover
+	overflow-y hidden
+
+	.container-abs
+		position absolute
+		top 200%
+		left 50%
+		transform translateY( -50% ) translateX( -50% )
+
+	h1
+		font 30px $primary-font
+		color white
+		margin 0
+
+		span
+			color $primary
+			font 50px $primary-font
+
+	p
+		font 14px $secondary-font
+		color white
+		width 400px
+
+	.slider
+		margin 0 0 60px
+
+	.btn
+		display inline-block
+		width 200px
+		text-align center
+		box-sizing border-box
+
+	.slick-slide
+		padding 0 1px
+
+	.slick-dots
+		margin 0
+		padding 0
+		list-style none
+
+		li
+			display inline-block
+			margin 0 10px 0 0
+			&:last-child
+				margin 0
+
+			button
+				border 0
+				font-size 0
+				border-radius 0
+				background white
+				opacity .3
+				width 20px
+				height 5px
+				padding 0
+			&.slick-active
+				button
+					opacity 1
+
+	.btn-continue
+		position absolute
+		right 55px
+		top 80px
+		button
+			margin-bottom 8px
+			.mat-button-wrapper
+				padding 0
+				.arrow
+					font-size 50px
+
+			&[disabled]
+				background $light-grey
+				color $bg-grey
+		div
+			color $light-grey
+			&.go
+				color $primary
+

@@ -1,0 +1,31 @@
+@import '../../../core/styl/utils.styl'
+
+[data-component='breadcrumb']
+	padding 20px 0 25px
+	.breadcrumb
+		list-style none
+		margin 0
+		padding 0
+		.breadcrumb-item
+			display inline-block
+			line-height 20px
+			&:last-child
+				&:after
+					content ''
+			&:after
+				content 'arrow_drop_down'
+				transform rotate( -90deg )
+				font-family 'Material Icons'
+				font-size 20px
+				color $light-grey
+				display inline-block
+				vertical-align middle
+			span,
+			a
+				font-family $primary-font
+				font-size 12px
+				font-weight 500
+				text-align left
+				color $light-grey
+				text-decoration none
+

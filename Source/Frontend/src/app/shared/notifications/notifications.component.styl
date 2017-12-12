@@ -1,0 +1,24 @@
+@import '../../../core/styl/utils.styl'
+
+[data-component='notifications']
+	.notification
+		background url( '../../../assets/imgs/shared/notify.svg' ) no-repeat
+		width 18px
+		height 17px
+		font-size 0
+		position relative
+		display inline-block
+		background-color transparent
+		border 0
+		&.active
+			&:after
+				content ''
+				display block
+				position absolute
+				width 14px
+				height 14px
+				background-color $orange
+				border solid 2px white
+				border-radius 50%
+				top -5px
+				right -5px

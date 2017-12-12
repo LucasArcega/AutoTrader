@@ -1,0 +1,20 @@
+<div data-component="my-cpf" *ngIf="active">
+
+	<form [formGroup]="formVerifyCpf">
+
+		<div class="login-step">
+
+			<label for="cpf">CPF (apenas números)</label>
+			<input type="tel" mask="000.000.000-00" formControlName="cpf" placeholder="Insira seu CPF" class="inp-cpf" (input)="verifyCpf($event.target.value)">
+
+			<mat-checkbox class="check-remember-my-user pull-right" disableRipple formControlName="remember">Lembrar meu usuário</mat-checkbox>
+
+			<button type="button" mat-raised-button color="primary" class="btn-send" [disabled]="!canSend" (click)="send()">
+				<span class="label">Próximo</span>
+				<mat-progress-spinner diameter="20" mode="indeterminate" *ngIf="sending"></mat-progress-spinner>
+			</button>
+			<a href="#" class="link">Porque precisamos do seu CPF?</a>
+		</div>
+
+	</form>
+</div>

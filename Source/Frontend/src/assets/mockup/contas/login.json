@@ -1,0 +1,21 @@
+{
+	"Retorno": {
+			"Celular": "+55839700005",
+			"Adesoes": [
+					{
+							"Poder": "TRANSACIONAR",
+							"CodSistema": 7,
+							"Dados": {
+									"TipoConta": 1,
+									"Agencia": "0001",
+									"NumeroConta": 21400,
+									"CpfCnpj": "07890900000109",
+									"TipoPessoa": "J",
+									"NomeConta": ""
+							}
+					}
+			]
+	},
+	"Sucesso": true,
+	"Mensagem": "OK"
+}

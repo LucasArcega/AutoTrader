@@ -1,0 +1,31 @@
+$primary = #D96100
+$secondary = #002D72
+$grey = #C2C2C2
+$orange = #dd5f13
+$light-grey = #a4a4a4
+$middle-grey = #444
+$bg-grey = #f6f6f6
+$contrast-grey = #e1e1e1
+$error = #DF2213
+$success = #00C862
+
+$bs-card = 0 2px 5px 0 rgba( 0, 0, 0, 0.1 )
+$bs-header = 0 2px 6px 0 rgba( 0, 0, 0, 0.2 )
+$bs-menu = -2px 0 6px 0 rgba( 0, 0, 0, 0.2 )
+
+$primary-font = 'MuseoSans'
+$secondary-font = 'Roboto'
+
+$media_queries = {
+	small-tablet : 'only screen and (max-width: 768px)',
+	tablet : 'only screen and (max-width: 991px)',
+	large-tablet : 'only screen and (max-width: 1024px)'
+}
+
+breakpoint( $breakpoints )
+	$conditions = ()
+	for $breakpoint in $breakpoints
+		push( $conditions, $media_queries[$breakpoint] )
+	$conditions = join( ', ', $conditions )
+	@media $conditions
+		{block}

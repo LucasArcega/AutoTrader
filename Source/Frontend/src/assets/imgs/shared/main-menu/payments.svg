@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="13px" viewBox="0 0 17 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Bar_code</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="_01_dash" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-16.000000, -271.000000)">
+        <g id="CONTENT" transform="translate(0.000000, 49.000000)" fill="#002D72">
+            <g id="MENU-LATERAL-DASH">
+                <g id="outline" transform="translate(0.000000, 1.000000)">
+                    <g id="Pagamentos" transform="translate(0.000000, 217.000000)">
+                        <g id="Bar_code" transform="translate(16.000000, 4.000000)">
+                            <g id="Group-4">
+                                <path d="M14.875,-0.9296875 C14.875,2.09759205 14.875,6.96738371 14.875,13.6796875 C14.875,14.0117204 14.7587902,14.2939442 14.5263672,14.5263672 C14.2939442,14.7587902 14.0117204,14.875 13.6796875,14.875 L3.3203125,14.875 C2.98827959,14.875 2.70605585,14.7587902 2.47363281,14.5263672 C2.24120978,14.2939442 2.125,14.0117204 2.125,13.6796875 L2.125,-0.9296875 C2.125,-1.26172041 2.24120978,-1.54394415 2.47363281,-1.77636719 C2.70605585,-2.00879022 2.98827959,-2.125 3.3203125,-2.125 C8.19410967,-2.125 11.6472347,-2.125 13.6796875,-2.125 C14.4825708,-2.125 14.875,-1.65699735 14.875,-0.9296875 Z M13.7159091,13.7663043 L13.7159091,-1.01630435 L3.28409091,-1.01630435 L3.28409091,13.7663043 L13.7159091,13.7663043 Z" id="file---anticon" transform="translate(8.500000, 6.375000) rotate(90.000000) translate(-8.500000, -6.375000) "></path>
+                                <rect id="Rectangle-9" x="2.125" y="2.125" width="1.0625" height="8.5"></rect>
+                                <rect id="Rectangle-9" x="4.25" y="2.125" width="1.0625" height="5.3125"></rect>
+                                <rect id="Rectangle-9" x="11.6875" y="2.125" width="1.0625" height="5.3125"></rect>
+                                <rect id="Rectangle-9" x="6.90625" y="2.125" width="1.0625" height="5.3125"></rect>
+                                <rect id="Rectangle-9" x="9.03125" y="2.125" width="1.0625" height="5.3125"></rect>
+                                <rect id="Rectangle-9" x="13.8125" y="2.125" width="1.0625" height="8.5"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

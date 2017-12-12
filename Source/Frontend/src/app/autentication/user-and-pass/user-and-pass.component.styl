@@ -1,0 +1,38 @@
+@import '../../../core/styl/utils.styl'
+
+[data-component='user-and-pass']
+	position absolute
+	width 230px
+	text-align center
+	top 140px
+	left 150%
+	transform translateX( -50% )
+	label
+		text-align left
+
+	.sel-name-cpf
+		background $contrast-grey
+		padding 5px 5px 5px 8px
+		height 44px
+		.mat-select-value
+			font 14px $primary-font
+			color $primary
+			text-align left
+		.mat-select-trigger
+			height 100%
+		.mat-select-arrow
+			color $secondary
+
+	.cpf
+		text-align left
+		color $secondary
+		font 11px $secondary-font
+		position absolute
+		bottom 7px
+		left 8px
+
+	.form-control
+		position relative
+
+	.btn-send
+		margin 0 0 30px

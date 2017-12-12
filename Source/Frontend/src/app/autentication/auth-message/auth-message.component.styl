@@ -1,0 +1,27 @@
+@import '../../../core/styl/utils.styl'
+
+[data-component="auth-message"]
+	position absolute
+	top 50%
+	left 100%
+	padding 0 58px
+	transform translateY( -50% )
+
+	.btn-continue
+		top 10px
+		button
+			background $primary
+
+	h2
+		margin 0 0 15px
+
+		&.success
+			color $success
+			i
+				font-size 27px
+				margin-right 10px
+				vertical-align top
+
+	p
+		color $middle-grey
+		font-size 12px

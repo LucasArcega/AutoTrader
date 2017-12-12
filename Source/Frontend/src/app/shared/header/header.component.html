@@ -1,0 +1,23 @@
+<header data-component="header">
+	<div class="holder">
+			<div class="left-content">
+				<a href="/">
+					<h1 class="logo" title="Omni Banco"></h1>
+				</a>
+				<div class="menu-mobile" [class.opened]="!open" (click)="openMenu(open)">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+			</div>
+			<div class="right-content">
+				<app-profile></app-profile>
+				<app-notifications></app-notifications>
+				<button class="btn-logout" title="Sair">
+					<span>Sair</span>
+					<i class="material-icons">close</i>
+				</button>
+			</div>
+	</div>
+</header>

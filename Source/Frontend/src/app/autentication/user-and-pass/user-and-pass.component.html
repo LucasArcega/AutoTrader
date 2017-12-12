@@ -1,0 +1,35 @@
+<div data-component="user-and-pass" *ngIf="active">
+	<form [formGroup]="formLogin">
+		<div class="login-step">
+
+			<div class="form-control" *ngIf="hasLogedOnce">
+				<mat-select formControlName="cpf"  class="sel-name-cpf">
+					<mat-option>Selecione...</mat-option>
+					<mat-option *ngFor="let account of accounts" [value]="account.User.CpfCnpj">
+						<span>{{ account.User.Name }}</span>
+					</mat-option>
+				</mat-select>
+				<div class="cpf">CPF {{cpf}}</div>
+			</div>
+
+			<div class="form-control" *ngIf="!hasLogedOnce">
+				<label for="cpf">CPF (apenas números)</label>
+				<input type="tel" mask="000.000.000-00" formControlName="cpf" placeholder="Insira seu CPF" class="inp-cpf">
+			</div>
+
+			<div class="form-control">
+				<label for="pass">Senha</label>
+				<input [class.error]="passwordError" type="password" formControlName="pass" placeholder="Insira sua senha de 6 números" (input)="verifyPassword($event.target.value)">
+				<div class="error" *ngIf="passwordError">Senha incorreta. Tente novamente.</div>
+			</div>
+
+			<button type="button" mat-raised-button color="primary" class="btn-send" [disabled]="!canSend" (click)="send()">
+				<span class="layer"></span>
+				<span class="label">Entrar</span>
+				<mat-progress-spinner diameter="20" mode="indeterminate" *ngIf="sending"></mat-progress-spinner>
+			</button>
+
+			<a href="#" class="link">Esqueci minha senha</a>
+		</div>
+	</form>
+</div>
